@@ -1,0 +1,10 @@
+RULETA - mod para Minecraft 1.21.1 (Fabric, Java 21, Fabric API >= 0.100)
+
+OPCION SIN INSTALAR NADA (GitHub):
+ 1. Crea una cuenta en github.com y un repositorio nuevo.
+ 2. Sube TODO el contenido de esta carpeta (incluida la carpeta oculta .github).
+ 3. Pestana "Actions" > "Compilar mod" > "Run workflow".
+ 4. Cuando termine (unos 3-5 min), entra a esa ejecucion y descarga "ruleta-mod": dentro esta ruleta-1.0.0.jar
+ 5. Pon ese .jar en la carpeta mods junto con Fabric API (1.21.1).
+
+Uso en el juego: /give @s ruleta:ruleta_admin (clic derecho = menu)  o  /ruleta <color|random>

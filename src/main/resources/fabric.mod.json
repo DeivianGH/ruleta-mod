@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "ruleta",
+  "version": "${version}",
+  "name": "Ruleta Desafio",
+  "description": "Ruleta de 8 colores controlada por un admin: dificultad, eventos, mensajes, premios y mas.",
+  "authors": ["Tu nombre"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.ruleta.RuletaMod"],
+    "client": ["com.ruleta.client.RuletaClient"]
+  },
+  "mixins": ["ruleta.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.100.0"
+  }
+}
