@@ -1,10 +1,32 @@
-RULETA - mod para Minecraft 1.21.1 (Fabric, Java 21, Fabric API >= 0.100)
+RULETA DE DESAFIOS — Minecraft Java 1.21.1
 
-OPCION SIN INSTALAR NADA (GitHub):
- 1. Crea una cuenta en github.com y un repositorio nuevo.
- 2. Sube TODO el contenido de esta carpeta (incluida la carpeta oculta .github).
- 3. Pestana "Actions" > "Compilar mod" > "Run workflow".
- 4. Cuando termine (unos 3-5 min), entra a esa ejecucion y descarga "ruleta-mod": dentro esta ruleta-1.0.0.jar
- 5. Pon ese .jar en la carpeta mods junto con Fabric API (1.21.1).
+Compatibilidad
+- Fabric Loader 0.16.5 o posterior
+- Fabric API 0.105.0+1.21.1 o posterior compatible con Minecraft 1.21.1
+- Java 21
 
-Uso en el juego: /give @s ruleta:ruleta_admin (clic derecho = menu)  o  /ruleta <color|random>
+Instalacion
+1. Instala Fabric Loader para Minecraft 1.21.1.
+2. Copia Fabric API y el archivo ruleta-1.0.0.jar a la carpeta mods.
+3. Inicia el juego. Para usar el panel, entrega la varita con:
+   /give @s ruleta:ruleta_admin
+   Haz clic derecho con la varita como operador (nivel 2 o superior).
+
+Comandos y objetos
+- /ruleta <roja|naranja|amarilla|verde|cian|morada|rosada|random>
+- /give @s ruleta:corazon
+- /give @s ruleta:totem_1 (hasta ruleta:totem_10)
+- La ruleta de objetos del panel entrega el mismo resultado aleatorio a cada jugador.
+- Los ajustes del panel se guardan localmente en config/ruleta.properties,
+  separados por color.
+
+Compilacion desde el proyecto
+- Con Java 21 y Gradle 8.8 instalado, ejecuta: gradle build --no-daemon
+- El JAR se genera en build/libs/ruleta-1.0.0.jar.
+
+Notas
+- Rosa, cian y verde solo muestran mensajes; sus teletransportes, misiones,
+  mejoras y otras acciones quedan sin configurar.
+- Los cuatro ultimos totems tienen modelos e iconos animados de delfin dorado.
+- Los iconos y modelos se pueden reemplazar en
+  src/main/resources/assets/ruleta/textures/item y models/item.

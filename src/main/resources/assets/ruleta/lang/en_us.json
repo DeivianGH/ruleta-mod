@@ -1,1 +1,14 @@
-{ "item.ruleta.ruleta_admin": "Roulette Wand" }
+{
+  "item.ruleta.ruleta_admin": "Roulette Wand",
+  "item.ruleta.corazon": "Consumable Heart",
+  "item.ruleta.totem_1": "Amatista Totem",
+  "item.ruleta.totem_2": "Bosque Totem",
+  "item.ruleta.totem_3": "Coral Totem",
+  "item.ruleta.totem_4": "Ceniza Totem",
+  "item.ruleta.totem_5": "Tempestad Totem",
+  "item.ruleta.totem_6": "Sol Totem",
+  "item.ruleta.totem_7": "Delfín Dorado Totem",
+  "item.ruleta.totem_8": "Delfín Solar Totem",
+  "item.ruleta.totem_9": "Delfín Marino Totem",
+  "item.ruleta.totem_10": "Delfín Abisal Totem"
+}
