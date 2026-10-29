@@ -1,0 +1,38 @@
+RULETA DE DESAFIOS — Minecraft Java 1.21.1
+
+Compatibilidad
+- Fabric Loader 0.16.5 o posterior
+- Fabric API 0.105.0+1.21.1 o posterior compatible con Minecraft 1.21.1
+- Java 21
+
+Instalacion
+1. Instala Fabric Loader para Minecraft 1.21.1.
+2. Copia Fabric API y el archivo ruleta-1.0.0.jar a la carpeta mods.
+3. Inicia el juego. Para usar el panel, entrega la varita con:
+   /give @s ruleta:ruleta_admin
+   Haz clic derecho con la varita como operador (nivel 2 o superior).
+
+Comandos y objetos
+- /ruleta <roja|naranja|amarilla|verde|cian|morada|rosada|random>
+- /give @s ruleta:corazon
+- /give @s ruleta:totem_1 (hasta ruleta:totem_10)
+- La ruleta de objetos del panel entrega el mismo resultado aleatorio a cada jugador.
+- Los ajustes del panel se guardan localmente en config/ruleta.properties,
+  separados por color.
+
+Compilacion desde el proyecto
+- Con Java 21 y Gradle 8.8 instalado, ejecuta: gradle build --no-daemon
+- El JAR se genera en build/libs/ruleta-1.0.0.jar.
+- En GitHub, sube/reemplaza estos archivos en la raiz del repositorio y ejecuta
+  Actions > Compilar mod > Run workflow. Descarga el artefacto ruleta-mod del job.
+
+Notas
+- Rosa, cian y verde solo muestran mensajes; sus teletransportes, misiones,
+  mejoras y otras acciones quedan sin configurar.
+- Los cuatro ultimos totems tienen modelos e iconos animados de delfin dorado.
+- La ruleta y la escena de muerte se guardan como atlas PNG transparentes en
+  assets/ruleta/textures/animation. La musica ambiental OGG dura 15 segundos.
+- Para sustituir los videos, ejecuta tools/convertir_medios.py con FFmpeg y
+  Pillow instalados; los archivos MP4 originales no son necesarios para compilar.
+- Los iconos y modelos se pueden reemplazar en
+  src/main/resources/assets/ruleta/textures/item y models/item.

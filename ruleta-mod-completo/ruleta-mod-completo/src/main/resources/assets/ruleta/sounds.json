@@ -1,0 +1,10 @@
+{
+  "momento_deivil": {
+    "sounds": [
+      {
+        "name": "ruleta:momento_deivil",
+        "stream": true
+      }
+    ]
+  }
+}

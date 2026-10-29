@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "ruleta",
+  "version": "${version}",
+  "name": "Ruleta Desafio",
+  "description": "Ruleta de eventos, objetos y animaciones para Minecraft 1.21.1.",
+  "authors": ["Tu nombre"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.ruleta.RuletaMod"],
+    "client": ["com.ruleta.client.RuletaClient"]
+  },
+  "mixins": ["ruleta.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.100.0"
+  }
+}
