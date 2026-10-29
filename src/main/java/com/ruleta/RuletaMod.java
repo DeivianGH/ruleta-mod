@@ -90,7 +90,7 @@ public class RuletaMod implements ModInitializer {
                     if (stack.isOf(TOTEMS[i])) {
                         stack.decrement(1);
                         player.setHealth(1.0f);
-                        player.clearFire();
+                        player.extinguish();
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 900, 1));
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 1));
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 800, 0));
@@ -334,7 +334,7 @@ public class RuletaMod implements ModInitializer {
             for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
                 var world = player.getServerWorld();
                 world.spawnParticles(ParticleTypes.ASH, player.getX(), player.getY() + 1.0, player.getZ(), 5, 1.2, 1.0, 1.2, 0.015);
-                world.playSound(null, player.getBlockPos(), SoundEvents.AMBIENT_CAVE, SoundCategory.AMBIENT, 0.25f, 0.65f);
+                world.playSound(null, player.getBlockPos(), SoundEvents.AMBIENT_CAVE.value(), SoundCategory.AMBIENT, 0.25f, 0.65f);
             }
         }
     }

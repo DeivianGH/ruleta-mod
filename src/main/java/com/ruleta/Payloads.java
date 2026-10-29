@@ -65,7 +65,7 @@ public final class Payloads {
     public record Atmosphere(boolean active) implements CustomPayload {
         public static final Id<Atmosphere> ID = new Id<>(Identifier.of(RuletaMod.ID, "atmosphere"));
         public static final PacketCodec<ByteBuf, Atmosphere> CODEC = PacketCodec.tuple(
-                PacketCodecs.BOOLEAN, Atmosphere::active, Atmosphere::new);
+                PacketCodecs.BOOL, Atmosphere::active, Atmosphere::new);
         @Override public Id<? extends CustomPayload> getId() { return ID; }
     }
 }
